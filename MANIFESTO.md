@@ -15,7 +15,7 @@
 **We, the undersigned Balkan developers, hereby declare:**
 
 ### Article I: On IDEs
-- JetBrains makes great products, but €200/year? That's 67 burek sandwiches.
+- JetBrains makes great products, but €200/year? That's 67 burek's.
 - We'd rather build our own tools than pay subscriptions.
 - If we can debug PrestaShop 1.6, we can build an IDE.
 
