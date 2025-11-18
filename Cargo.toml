@@ -1,0 +1,37 @@
+[package]
+name = "php-sunshine"
+version = "0.1.0"
+edition = "2024"
+authors = ["PHP Sunshine Contributors"]
+description = "A modern PHP IDE built with Rust - supporting PrestaShop, Laravel, and Symfony"
+
+[dependencies]
+# Terminal UI
+ratatui = "0.29"
+crossterm = "0.28"
+
+# Text editing
+ropey = "1.6"  # Rope-based text buffer
+tree-sitter = "0.22"
+tree-sitter-php = "0.22"
+
+# File system
+notify = "6.1"  # File watching
+walkdir = "2.5"
+ignore = "0.4"  # Respect .gitignore
+
+# Parsing and analysis
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+
+# Async runtime
+tokio = { version = "1.40", features = ["full"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"

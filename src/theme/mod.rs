@@ -1,0 +1,226 @@
+/// Material Design theme system for PHP Sunshine
+/// Includes Ocean, Palenight, Darker, Lighter, and Deep Ocean themes
+
+use ratatui::style::Color;
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Clone, Copy, PartialEq, Serialize, Deserialize)]
+pub enum MaterialTheme {
+    Ocean,
+    Palenight,
+    Darker,
+    Lighter,
+    DeepOcean,
+}
+
+#[derive(Debug, Clone, Copy)]
+pub struct ThemeColors {
+    // Background colors
+    pub bg_primary: Color,
+    pub bg_secondary: Color,
+    pub bg_tertiary: Color,
+    
+    // Foreground colors
+    pub fg_primary: Color,
+    pub fg_secondary: Color,
+    pub fg_disabled: Color,
+    
+    // Accent colors
+    pub accent: Color,
+    pub accent_light: Color,
+    
+    // Syntax highlighting
+    pub keyword: Color,
+    pub string: Color,
+    pub number: Color,
+    pub comment: Color,
+    pub function: Color,
+    pub variable: Color,
+    pub class_name: Color,
+    pub constant: Color,
+    pub operator: Color,
+    pub tag: Color,
+    pub attribute: Color,
+    
+    // UI Elements
+    pub selection: Color,
+    pub cursor_line: Color,
+    pub line_number: Color,
+    pub border: Color,
+    pub error: Color,
+    pub warning: Color,
+    pub success: Color,
+    pub info: Color,
+}
+
+impl MaterialTheme {
+    pub fn colors(&self) -> ThemeColors {
+        match self {
+            MaterialTheme::Ocean => ThemeColors {
+                bg_primary: Color::Rgb(15, 21, 28),
+                bg_secondary: Color::Rgb(22, 31, 41),
+                bg_tertiary: Color::Rgb(30, 42, 56),
+                fg_primary: Color::Rgb(176, 190, 197),
+                fg_secondary: Color::Rgb(101, 115, 126),
+                fg_disabled: Color::Rgb(76, 85, 95),
+                accent: Color::Rgb(128, 203, 196),
+                accent_light: Color::Rgb(158, 223, 216),
+                keyword: Color::Rgb(199, 146, 234),
+                string: Color::Rgb(195, 232, 141),
+                number: Color::Rgb(247, 140, 108),
+                comment: Color::Rgb(84, 110, 122),
+                function: Color::Rgb(130, 170, 255),
+                variable: Color::Rgb(238, 255, 255),
+                class_name: Color::Rgb(255, 203, 107),
+                constant: Color::Rgb(137, 221, 255),
+                operator: Color::Rgb(137, 221, 255),
+                tag: Color::Rgb(255, 83, 112),
+                attribute: Color::Rgb(255, 203, 107),
+                selection: Color::Rgb(45, 60, 75),
+                cursor_line: Color::Rgb(25, 35, 47),
+                line_number: Color::Rgb(66, 82, 96),
+                border: Color::Rgb(30, 42, 56),
+                error: Color::Rgb(255, 83, 112),
+                warning: Color::Rgb(255, 203, 107),
+                success: Color::Rgb(195, 232, 141),
+                info: Color::Rgb(130, 170, 255),
+            },
+            MaterialTheme::Palenight => ThemeColors {
+                bg_primary: Color::Rgb(41, 45, 62),
+                bg_secondary: Color::Rgb(50, 55, 77),
+                bg_tertiary: Color::Rgb(59, 66, 92),
+                fg_primary: Color::Rgb(178, 191, 224),
+                fg_secondary: Color::Rgb(113, 124, 158),
+                fg_disabled: Color::Rgb(84, 90, 113),
+                accent: Color::Rgb(199, 146, 234),
+                accent_light: Color::Rgb(219, 176, 244),
+                keyword: Color::Rgb(199, 146, 234),
+                string: Color::Rgb(195, 232, 141),
+                number: Color::Rgb(247, 140, 108),
+                comment: Color::Rgb(103, 110, 149),
+                function: Color::Rgb(130, 170, 255),
+                variable: Color::Rgb(238, 255, 255),
+                class_name: Color::Rgb(255, 203, 107),
+                constant: Color::Rgb(137, 221, 255),
+                operator: Color::Rgb(137, 221, 255),
+                tag: Color::Rgb(255, 83, 112),
+                attribute: Color::Rgb(255, 203, 107),
+                selection: Color::Rgb(64, 70, 98),
+                cursor_line: Color::Rgb(48, 53, 74),
+                line_number: Color::Rgb(80, 88, 117),
+                border: Color::Rgb(59, 66, 92),
+                error: Color::Rgb(255, 83, 112),
+                warning: Color::Rgb(255, 203, 107),
+                success: Color::Rgb(195, 232, 141),
+                info: Color::Rgb(130, 170, 255),
+            },
+            MaterialTheme::Darker => ThemeColors {
+                bg_primary: Color::Rgb(33, 33, 33),
+                bg_secondary: Color::Rgb(42, 42, 42),
+                bg_tertiary: Color::Rgb(51, 51, 51),
+                fg_primary: Color::Rgb(238, 238, 238),
+                fg_secondary: Color::Rgb(176, 176, 176),
+                fg_disabled: Color::Rgb(117, 117, 117),
+                accent: Color::Rgb(128, 203, 196),
+                accent_light: Color::Rgb(158, 223, 216),
+                keyword: Color::Rgb(199, 146, 234),
+                string: Color::Rgb(195, 232, 141),
+                number: Color::Rgb(247, 140, 108),
+                comment: Color::Rgb(117, 117, 117),
+                function: Color::Rgb(130, 170, 255),
+                variable: Color::Rgb(238, 255, 255),
+                class_name: Color::Rgb(255, 203, 107),
+                constant: Color::Rgb(137, 221, 255),
+                operator: Color::Rgb(137, 221, 255),
+                tag: Color::Rgb(255, 83, 112),
+                attribute: Color::Rgb(255, 203, 107),
+                selection: Color::Rgb(60, 60, 60),
+                cursor_line: Color::Rgb(38, 38, 38),
+                line_number: Color::Rgb(90, 90, 90),
+                border: Color::Rgb(51, 51, 51),
+                error: Color::Rgb(255, 83, 112),
+                warning: Color::Rgb(255, 203, 107),
+                success: Color::Rgb(195, 232, 141),
+                info: Color::Rgb(130, 170, 255),
+            },
+            MaterialTheme::Lighter => ThemeColors {
+                bg_primary: Color::Rgb(250, 250, 250),
+                bg_secondary: Color::Rgb(245, 245, 245),
+                bg_tertiary: Color::Rgb(238, 238, 238),
+                fg_primary: Color::Rgb(33, 33, 33),
+                fg_secondary: Color::Rgb(117, 117, 117),
+                fg_disabled: Color::Rgb(176, 176, 176),
+                accent: Color::Rgb(0, 137, 123),
+                accent_light: Color::Rgb(38, 166, 154),
+                keyword: Color::Rgb(124, 77, 255),
+                string: Color::Rgb(113, 168, 0),
+                number: Color::Rgb(240, 113, 120),
+                comment: Color::Rgb(144, 164, 174),
+                function: Color::Rgb(33, 150, 243),
+                variable: Color::Rgb(57, 73, 76),
+                class_name: Color::Rgb(255, 152, 0),
+                constant: Color::Rgb(0, 172, 193),
+                operator: Color::Rgb(57, 73, 76),
+                tag: Color::Rgb(229, 57, 53),
+                attribute: Color::Rgb(255, 152, 0),
+                selection: Color::Rgb(224, 224, 224),
+                cursor_line: Color::Rgb(248, 248, 248),
+                line_number: Color::Rgb(176, 176, 176),
+                border: Color::Rgb(224, 224, 224),
+                error: Color::Rgb(229, 57, 53),
+                warning: Color::Rgb(255, 152, 0),
+                success: Color::Rgb(113, 168, 0),
+                info: Color::Rgb(33, 150, 243),
+            },
+            MaterialTheme::DeepOcean => ThemeColors {
+                bg_primary: Color::Rgb(0, 11, 18),
+                bg_secondary: Color::Rgb(6, 17, 27),
+                bg_tertiary: Color::Rgb(12, 23, 36),
+                fg_primary: Color::Rgb(143, 161, 179),
+                fg_secondary: Color::Rgb(77, 93, 108),
+                fg_disabled: Color::Rgb(52, 64, 77),
+                accent: Color::Rgb(128, 203, 196),
+                accent_light: Color::Rgb(158, 223, 216),
+                keyword: Color::Rgb(199, 146, 234),
+                string: Color::Rgb(195, 232, 141),
+                number: Color::Rgb(247, 140, 108),
+                comment: Color::Rgb(52, 74, 89),
+                function: Color::Rgb(130, 170, 255),
+                variable: Color::Rgb(238, 255, 255),
+                class_name: Color::Rgb(255, 203, 107),
+                constant: Color::Rgb(137, 221, 255),
+                operator: Color::Rgb(137, 221, 255),
+                tag: Color::Rgb(255, 83, 112),
+                attribute: Color::Rgb(255, 203, 107),
+                selection: Color::Rgb(20, 35, 48),
+                cursor_line: Color::Rgb(4, 15, 25),
+                line_number: Color::Rgb(40, 56, 71),
+                border: Color::Rgb(12, 23, 36),
+                error: Color::Rgb(255, 83, 112),
+                warning: Color::Rgb(255, 203, 107),
+                success: Color::Rgb(195, 232, 141),
+                info: Color::Rgb(130, 170, 255),
+            },
+        }
+    }
+
+    pub fn name(&self) -> &str {
+        match self {
+            MaterialTheme::Ocean => "Material Ocean",
+            MaterialTheme::Palenight => "Material Palenight",
+            MaterialTheme::Darker => "Material Darker",
+            MaterialTheme::Lighter => "Material Lighter",
+            MaterialTheme::DeepOcean => "Material Deep Ocean",
+        }
+    }
+
+    pub fn all() -> Vec<MaterialTheme> {
+        vec![
+            MaterialTheme::Ocean,
+            MaterialTheme::Palenight,
+            MaterialTheme::Darker,
+            MaterialTheme::Lighter,
+            MaterialTheme::DeepOcean,
+        ]
+    }
+}
